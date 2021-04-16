@@ -1,0 +1,2827 @@
+2021-02-11 12:10:33.108 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 21 unit plans from pd.groupby_agg.
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,DELETED, 1:0
+INPUT,COL, 0:1
+----------
+INPUT,COL, 0:1 -> OUTPUT,DELETED, 1:0 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 1:0
+OUTPUT,CELL, 0:1
+INPUT,CELL, 2:2
+----------
+INTERM, 1:0 -> OUTPUT,CELL, 0:1 (EQUAL)
+INPUT,CELL, 2:2 -> INTERM, 1:0 (COUNT)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,DELETED, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,DELETED, 1:1 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 0:0
+INPUT,CELL, 2:1
+INTERM, 1:2
+----------
+INPUT,CELL, 2:1 -> INTERM, 1:2 (COUNT_NON_NULL)
+INTERM, 1:2 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+INTERM, 2:2
+----------
+INTERM, 2:2 -> OUTPUT,CELL, 0:0 (EQUAL)
+INPUT,CELL, 1:1 -> INTERM, 2:2 (MEAN)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 2:0
+OUTPUT,CELL, 0:1
+INPUT,CELL, 1:2
+----------
+INTERM, 2:0 -> OUTPUT,CELL, 0:1 (EQUAL)
+INPUT,CELL, 1:2 -> INTERM, 2:0 (SUM)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 1:0
+OUTPUT,CELL, 2:1
+INPUT,CELL, 0:2
+----------
+INPUT,CELL, 0:2 -> INTERM, 1:0 (PROD)
+INTERM, 1:0 -> OUTPUT,CELL, 2:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 2:0
+INTERM, 0:1
+OUTPUT,CELL, 1:2
+----------
+INPUT,CELL, 2:0 -> INTERM, 0:1 (ALL)
+INTERM, 0:1 -> OUTPUT,CELL, 1:2 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 0:0
+OUTPUT,CELL, 1:1
+INTERM, 2:2
+----------
+INPUT,CELL, 0:0 -> INTERM, 2:2 (ANY)
+INTERM, 2:2 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 0:0
+OUTPUT,CELL, 1:1
+INTERM, 2:2
+----------
+INPUT,CELL, 0:0 -> INTERM, 2:2 (MAX)
+INTERM, 2:2 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 0:0
+INPUT,CELL, 2:1
+OUTPUT,CELL, 1:2
+----------
+INPUT,CELL, 2:1 -> INTERM, 0:0 (MIN)
+INTERM, 0:0 -> OUTPUT,CELL, 1:2 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 1:0
+INPUT,CELL, 2:1
+INTERM, 0:2
+----------
+INTERM, 0:2 -> OUTPUT,CELL, 1:0 (EQUAL)
+INPUT,CELL, 2:1 -> INTERM, 0:2 (MEDIAN)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_agg
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 2:0
+INTERM, 0:1
+INPUT,CELL, 1:2
+----------
+INPUT,CELL, 1:2 -> INTERM, 0:1 (NUNIQUE)
+INTERM, 0:1 -> OUTPUT,CELL, 2:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.115 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 11 unit plans from pd.melt.
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,DELETED, 1:0
+INPUT,COL, 0:1
+----------
+INPUT,COL, 0:1 -> OUTPUT,DELETED, 1:0 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,DELETED, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,DELETED, 1:1 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.melt
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 0:0
+OUTPUT,CELL, 1:1
+----------
+INPUT,COL, 0:0 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.119 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 10 unit plans from pd.drop_columns.
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,DELETED, 1:0
+INPUT,COL, 0:1
+----------
+INPUT,COL, 0:1 -> OUTPUT,DELETED, 1:0 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,DELETED, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,DELETED, 1:1 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.drop_columns
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.130 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 18 unit plans from pd.groupby_transform.
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 0:0
+INPUT,CELL, 2:1
+INTERM, 1:2
+----------
+INPUT,CELL, 2:1 -> INTERM, 1:2 (COUNT_NON_NULL)
+INTERM, 1:2 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 2:0
+OUTPUT,CELL, 0:1
+INPUT,CELL, 1:2
+----------
+INTERM, 2:0 -> OUTPUT,CELL, 0:1 (EQUAL)
+INPUT,CELL, 1:2 -> INTERM, 2:0 (SUM)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 1:0
+OUTPUT,CELL, 2:1
+INPUT,CELL, 0:2
+----------
+INPUT,CELL, 0:2 -> INTERM, 1:0 (PROD)
+INTERM, 1:0 -> OUTPUT,CELL, 2:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 0:0
+OUTPUT,CELL, 1:1
+INTERM, 2:2
+----------
+INPUT,CELL, 0:0 -> INTERM, 2:2 (MAX)
+INTERM, 2:2 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 0:0
+INPUT,CELL, 2:1
+OUTPUT,CELL, 1:2
+----------
+INPUT,CELL, 2:1 -> INTERM, 0:0 (MIN)
+INTERM, 0:0 -> OUTPUT,CELL, 1:2 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 2:0
+INPUT,CELL, 1:1
+OUTPUT,CELL, 0:2
+----------
+INPUT,CELL, 1:1 -> INTERM, 2:0 (CUMSUM)
+INTERM, 2:0 -> OUTPUT,CELL, 0:2 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 1:0
+OUTPUT,CELL, 2:1
+INPUT,CELL, 0:2
+----------
+INPUT,CELL, 0:2 -> INTERM, 1:0 (CUMPROD)
+INTERM, 1:0 -> OUTPUT,CELL, 2:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 2:0
+OUTPUT,CELL, 0:1
+INTERM, 1:2
+----------
+INPUT,CELL, 2:0 -> INTERM, 1:2 (CUMMIN)
+INTERM, 1:2 -> OUTPUT,CELL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 0:0
+OUTPUT,CELL, 2:1
+INTERM, 1:2
+----------
+INTERM, 1:2 -> OUTPUT,CELL, 2:1 (EQUAL)
+INPUT,CELL, 0:0 -> INTERM, 1:2 (CUMMAX)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.groupby_transform
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 1:0
+INTERM, 2:1
+OUTPUT,CELL, 0:2
+----------
+INTERM, 2:1 -> OUTPUT,CELL, 0:2 (EQUAL)
+INPUT,CELL, 1:0 -> INTERM, 2:1 (CUMCOUNT)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.135 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 9 unit plans from pd.pivot_table.
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.pivot_table
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,COL, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,COL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.138 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 11 unit plans from pd.fillna.
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 0:0
+INPUT,CELL, 2:1
+INTERM, 1:2
+----------
+INTERM, 1:2 -> OUTPUT,CELL, 0:0 (EQUAL)
+INPUT,CELL, 2:1 -> INTERM, 1:2 (REPLACE_CONST)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 0:0
+OUTPUT,CELL, 1:1
+INTERM, 2:2
+----------
+INPUT,CELL, 0:0 -> INTERM, 2:2 (REPLACEMENT)
+INTERM, 2:2 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.fillna
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+OUTPUT,CELL, 1:0
+INTERM, 0:1
+INPUT,CELL, 2:2
+----------
+INTERM, 0:1 -> OUTPUT,CELL, 1:0 (EQUAL)
+INPUT,CELL, 2:2 -> INTERM, 0:1 (REPLACED)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.142 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 9 unit plans from pd.dropna.
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,DELETED, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,DELETED, 1:1 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.dropna
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.145 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 9 unit plans from pd.unite.
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.unite
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 2:0
+INTERM, 1:1
+OUTPUT,CELL, 0:2
+----------
+INTERM, 1:1 -> OUTPUT,CELL, 0:2 (EQUAL)
+INPUT,CELL, 2:0 -> INTERM, 1:1 (STR_JOIN)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.149 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 9 unit plans from pd.separate.
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.separate
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 0:0
+OUTPUT,CELL, 1:1
+INTERM, 2:2
+----------
+INPUT,CELL, 0:0 -> INTERM, 2:2 (STR_SPLIT)
+INTERM, 2:2 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.152 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 12 unit plans from pd.mutate.
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+OUTPUT,CELL, 0:0
+INPUT,CELL, 1:1
+----------
+INPUT,CELL, 1:1 -> OUTPUT,CELL, 0:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 2:0
+OUTPUT,CELL, 0:1
+INPUT,CELL, 1:2
+----------
+INTERM, 2:0 -> OUTPUT,CELL, 0:1 (EQUAL)
+INPUT,CELL, 1:2 -> INTERM, 2:0 (SUM)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 1:0
+OUTPUT,CELL, 2:1
+INPUT,CELL, 0:2
+----------
+INPUT,CELL, 0:2 -> INTERM, 1:0 (PROD)
+INTERM, 1:0 -> OUTPUT,CELL, 2:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INPUT,CELL, 2:0
+INTERM, 1:1
+OUTPUT,CELL, 0:2
+----------
+INPUT,CELL, 2:0 -> INTERM, 1:1 (SUB)
+INTERM, 1:1 -> OUTPUT,CELL, 0:2 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.mutate
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 0:0
+INPUT,CELL, 2:1
+OUTPUT,CELL, 1:2
+----------
+INPUT,CELL, 2:1 -> INTERM, 0:0 (DIV)
+INTERM, 0:0 -> OUTPUT,CELL, 1:2 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.156 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 9 unit plans from pd.filtering_expr.
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,DELETED, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,DELETED, 1:1 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_expr
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 2:0
+OUTPUT,CELL, 0:1
+INPUT,CELL, 1:2
+----------
+INPUT,CELL, 1:2 -> INTERM, 2:0 (FILTER_EXPR)
+INTERM, 2:0 -> OUTPUT,CELL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.159 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 10 unit plans from pd.filtering_contains.
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,DELETED, 1:0
+OUTPUT,DELETED, 0:1
+----------
+INPUT,DELETED, 1:0 -> OUTPUT,DELETED, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,CELL, 0:0
+OUTPUT,DELETED, 1:1
+----------
+INPUT,CELL, 0:0 -> OUTPUT,DELETED, 1:1 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 1
+INPUT,COL, 1:0
+OUTPUT,COL, 0:1
+----------
+INPUT,COL, 1:0 -> OUTPUT,COL, 0:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 0:0
+INPUT,COL, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+OUTPUT,3735928559, 1:0
+INPUT,CELL, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,DELETED, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 2, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 1:0
+INPUT,CELL, 0:1
+OUTPUT,CELL, 2:2
+----------
+INTERM, 1:0 -> OUTPUT,CELL, 2:2 (EQUAL)
+INPUT,CELL, 0:1 -> INTERM, 1:0 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+Component: pd.filtering_contains
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 2
+INTERM, 2:0
+OUTPUT,CELL, 1:1
+INPUT,CELL, 0:2
+----------
+INPUT,CELL, 0:2 -> INTERM, 2:0 (CONTAINED_IN)
+INTERM, 2:0 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 0})}
+========xxx========
+
+2021-02-11 12:10:33.162 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 19 unit plans from pd.merge.
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+OUTPUT,DELETED, 1:0
+INPUT,CELL, 0:1
+INPUT,3735928559, 2:2
+----------
+INPUT,CELL, 0:1 -> OUTPUT,DELETED, 1:0 (DELETE)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+INPUT,COL, 0:0
+OUTPUT,COL, 1:1
+INPUT,3735928559, 2:2
+----------
+INPUT,COL, 0:0 -> OUTPUT,COL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+INPUT,CELL, 2:0
+OUTPUT,CELL, 1:1
+INPUT,3735928559, 0:2
+----------
+INPUT,CELL, 2:0 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+INPUT,3735928559, 0:0
+OUTPUT,DELETED, 2:1
+INPUT,DELETED, 1:2
+----------
+INPUT,DELETED, 1:2 -> OUTPUT,DELETED, 2:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,CELL, 1:0
+INPUT,CELL, 2:1
+OUTPUT,3735928559, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,CELL, 0:1
+INPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,CELL, 1:1
+INPUT,DELETED, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,COL, 1:1
+INPUT,CELL, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,IDX, 1:0
+INPUT,CELL, 0:1
+OUTPUT,3735928559, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,3735928559, 2:0
+INPUT,COL, 0:1
+OUTPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,COL, 0:0
+INPUT,DELETED, 1:1
+OUTPUT,3735928559, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,COL, 0:1
+INPUT,COL, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,IDX, 2:0
+INPUT,COL, 0:1
+OUTPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+INPUT,IDX, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+INPUT,DELETED, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,IDX, 0:1
+INPUT,IDX, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,DELETED, 2:0
+OUTPUT,3735928559, 0:1
+INPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,DELETED, 0:0
+OUTPUT,3735928559, 2:1
+INPUT,DELETED, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.merge
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,3735928559, 1:0
+INPUT,3735928559, 2:1
+OUTPUT,3735928559, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+2021-02-11 12:10:33.168 | DEBUG    | gauss.synthesis.deduction.query_planner:build:272 - Found 18 unit plans from pd.combine_first.
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+INPUT,COL, 0:0
+OUTPUT,COL, 1:1
+INPUT,3735928559, 2:2
+----------
+INPUT,COL, 0:0 -> OUTPUT,COL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+INPUT,CELL, 2:0
+OUTPUT,CELL, 1:1
+INPUT,3735928559, 0:2
+----------
+INPUT,CELL, 2:0 -> OUTPUT,CELL, 1:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 1
+INPUT,3735928559, 0:0
+OUTPUT,DELETED, 2:1
+INPUT,DELETED, 1:2
+----------
+INPUT,DELETED, 1:2 -> OUTPUT,DELETED, 2:1 (EQUAL)
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,CELL, 1:0
+INPUT,CELL, 2:1
+OUTPUT,3735928559, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,CELL, 0:1
+INPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,CELL, 1:1
+INPUT,DELETED, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,COL, 1:1
+INPUT,CELL, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,IDX, 1:0
+INPUT,CELL, 0:1
+OUTPUT,3735928559, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,3735928559, 2:0
+INPUT,COL, 0:1
+OUTPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,COL, 0:0
+INPUT,DELETED, 1:1
+OUTPUT,3735928559, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,COL, 0:1
+INPUT,COL, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,IDX, 2:0
+INPUT,COL, 0:1
+OUTPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,3735928559, 1:0
+OUTPUT,3735928559, 0:1
+INPUT,IDX, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,IDX, 0:0
+OUTPUT,3735928559, 1:1
+INPUT,DELETED, 2:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+OUTPUT,3735928559, 2:0
+INPUT,IDX, 0:1
+INPUT,IDX, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,DELETED, 2:0
+OUTPUT,3735928559, 0:1
+INPUT,3735928559, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,DELETED, 0:0
+OUTPUT,3735928559, 2:1
+INPUT,DELETED, 1:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+
+Component: pd.combine_first
+-----------------
+Transformation
+-----------------
+Num Nodes : 3, Num Edges : 0
+INPUT,3735928559, 1:0
+INPUT,3735928559, 2:1
+OUTPUT,3735928559, 0:2
+----------
+----------
+-----------------
+Argument Mappings
+-----------------
+{ArgumentNumberMapping(mapping={0: 1, 1: 0}), ArgumentNumberMapping(mapping={0: 0, 1: 1})}
+========xxx========
+

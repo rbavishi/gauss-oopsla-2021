@@ -1,0 +1,47 @@
+2021-02-11 12:10:13.463 | DEBUG    | gauss.synthesis.interface:build_synthesis_engine:15 - Building synthesis engine for domain PandasLiteSynthesisDomain.
+2021-02-11 12:10:13.464 | DEBUG    | gauss.synthesis.interface:build_synthesis_engine:16 - Data and logs will be saved at /Users/rbavishi/Research/Gauss-PLDI2021/binder/gauss/.saved_engines/pandas_lite.
+2021-02-11 12:10:13.464 | DEBUG    | gauss.synthesis.interface:build_synthesis_engine:17 - Using engine configuration: EngineConfig(name='pandas_lite', path='/Users/rbavishi/Research/Gauss-PLDI2021/binder/gauss/.saved_engines/pandas_lite', min_length=1, max_length=2, min_inputs=1, max_inputs=1, num_examples_per_component=50)
+2021-02-11 12:10:13.465 | DEBUG    | gauss.synthesis.deduction.engine:build:44 - Building witness set using components ['pd.groupby_agg', 'pd.groupby_transform', 'pd.pivot_table', 'pd.filtering_expr', 'pd.filtering_contains', 'pd.melt', 'pd.drop_columns', 'pd.fillna', 'pd.dropna', 'pd.merge', 'pd.combine_first', 'pd.unite', 'pd.separate', 'pd.mutate']...
+2021-02-11 12:10:27.025 | INFO     | gauss.synthesis.deduction.engine:build:52 - Finished building witness set.
+2021-02-11 12:10:27.026 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.groupby_agg
+2021-02-11 12:10:27.027 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.groupby_transform
+2021-02-11 12:10:27.028 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.pivot_table
+2021-02-11 12:10:27.028 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.filtering_expr
+2021-02-11 12:10:27.028 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.filtering_contains
+2021-02-11 12:10:27.028 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.melt
+2021-02-11 12:10:27.028 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.drop_columns
+2021-02-11 12:10:27.028 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.fillna
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.dropna
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.merge
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.combine_first
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.unite
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.separate
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:54 - Found 50 examples for component pd.mutate
+2021-02-11 12:10:27.029 | DEBUG    | gauss.synthesis.deduction.engine:build:58 - Initializing query planner...
+2021-02-11 12:10:27.030 | DEBUG    | gauss.synthesis.deduction.query_planner:build:250 - Extracting meta query-plans of length 1 from individual components...
+2021-02-11 12:10:33.105 | DEBUG    | gauss.synthesis.deduction.query_planner:build:257 - Found 57 unit plans in total.
+2021-02-11 12:10:33.108 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 21 unit plans from pd.groupby_agg.
+2021-02-11 12:10:33.115 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 11 unit plans from pd.melt.
+2021-02-11 12:10:33.118 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 10 unit plans from pd.drop_columns.
+2021-02-11 12:10:33.130 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 18 unit plans from pd.groupby_transform.
+2021-02-11 12:10:33.135 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 9 unit plans from pd.pivot_table.
+2021-02-11 12:10:33.138 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 11 unit plans from pd.fillna.
+2021-02-11 12:10:33.141 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 9 unit plans from pd.dropna.
+2021-02-11 12:10:33.145 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 9 unit plans from pd.unite.
+2021-02-11 12:10:33.149 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 9 unit plans from pd.separate.
+2021-02-11 12:10:33.152 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 12 unit plans from pd.mutate.
+2021-02-11 12:10:33.156 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 9 unit plans from pd.filtering_expr.
+2021-02-11 12:10:33.158 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 10 unit plans from pd.filtering_contains.
+2021-02-11 12:10:33.162 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 19 unit plans from pd.merge.
+2021-02-11 12:10:33.168 | DEBUG    | gauss.synthesis.deduction.query_planner:build:270 - Found 18 unit plans from pd.combine_first.
+2021-02-11 12:10:33.173 | DEBUG    | gauss.synthesis.deduction.query_planner:build:289 - Strengthening Unit Plans...
+2021-02-11 12:10:40.245 | DEBUG    | gauss.synthesis.deduction.query_planner:build:312 - Strengthened 57 unit plans.
+2021-02-11 12:10:40.245 | DEBUG    | gauss.synthesis.deduction.query_planner:build:321 - Initializing meta-plans from unit-plans...
+2021-02-11 12:10:40.253 | DEBUG    | gauss.synthesis.deduction.query_planner:build:325 - Evolving meta query-plans upto a maximum length of 2
+2021-02-11 12:10:41.066 | DEBUG    | gauss.synthesis.deduction.query_planner:build:344 - Found 818 transformations in total at depth 2.
+2021-02-11 12:10:41.066 | DEBUG    | gauss.synthesis.deduction.query_planner:build:349 - Found 837 transformations and meta query plans in total with max_depth=2.
+2021-02-11 12:10:41.069 | DEBUG    | gauss.synthesis.deduction.query_planner:build:366 - Constructing Sequence Tries...
+2021-02-11 12:10:41.075 | DEBUG    | gauss.synthesis.deduction.query_planner:build:368 - Sequence Tries constructed for every depth.
+2021-02-11 12:10:41.076 | INFO     | gauss.synthesis.deduction.engine:build:60 - Query planner initialized.
+2021-02-11 12:10:41.076 | INFO     | gauss.synthesis.deduction.engine:build:63 - Assembling deduction engine...
+2021-02-11 12:10:41.169 | INFO     | gauss.engines:create_pandas_lite_engine:42 - Engine ready.
